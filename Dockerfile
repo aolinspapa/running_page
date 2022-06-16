@@ -17,7 +17,7 @@ RUN if [ "$app" = "NRC" ] ; then \
     elif ["$app" = "Garmin"] ; then \
          python3 scripts/gramin_sync.py ${email} ${password}; \
     elif ["$app" = "Garmin-CN"] ; then \
-         python3 scripts/gramin_sync.py ${email} ${password}  --is-cn ; \
+         python3 scripts/gramin_sync.py ${80715578@qq.com} ${Garmin123}  --is-cn ; \
     elif ["$app" = "Strava"] ; then \
         python3 scripts/strava_sync.py ${client_id} ${client_secret} ${refresch_token};\
     elif ["$app" = "Nike_to_Strava"] ; then \
